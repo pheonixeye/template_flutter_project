@@ -7,8 +7,23 @@ class Styles {
   static const SCAFFOLDCOLOR = Colors.grey;
   static final LIGHTTHEMEDATA = ThemeData(
     primarySwatch: Styles.COLOR,
+    primaryColor: Colors.amber,
     fontFamily: 'Cairo',
     useMaterial3: true,
     scaffoldBackgroundColor: SCAFFOLDCOLOR.shade100,
+    textTheme: Typography.material2021().black.copyWith(
+          displayLarge: const TextStyle(
+            fontSize: 72.0,
+            fontWeight: FontWeight.bold,
+          ),
+          titleLarge: const TextStyle(
+            fontSize: 36.0,
+            fontStyle: FontStyle.italic,
+          ),
+          bodyMedium: const TextStyle(
+            fontSize: 14.0,
+            fontFamily: 'Hind',
+          ),
+        ),
   );
 }
